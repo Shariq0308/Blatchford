@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1;
-    grid-gap: 160px;
+    grid-gap: 120px;
     grid-template-areas: 
     "img1 img2 img3";
 }
