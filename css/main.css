@@ -1,0 +1,718 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+ }
+ body{
+    overflow-x: hidden;         /** this is to hide the transition horizontally*/
+}
+
+/*********** Header setup *************/
+ header{
+    overflow-x: hidden;
+    z-index: 1;
+ }
+
+ h2{  
+    font-weight: normal; 
+ }
+ 
+.burger div{                /** Line create for Hamburger Menu*/
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger{
+    padding-top: 1.0%;
+    z-index: 2;
+    position: fixed;        /** to keep it on the top*/
+    right: 5%;
+    cursor: pointer;
+    text-align: right;
+}
+
+.headerContainer{
+    left: 0;
+    top: 1.0vh;
+    width: 100%;
+    height: 6%;
+    opacity: 1.0;
+    position: fixed;
+    background: white;
+    backdrop-filter: blur(40%);
+}
+
+.logo{
+    padding-top: 1%;
+    left:5%;
+    position: fixed;       /** to keep it on the top*/
+    letter-spacing: 4px;
+    font-weight: 300;   
+    font-family: 'Alata', sans-serif;
+    color: black;
+    font-size: larger; 
+}
+
+/* Menu Options */
+
+nav{                                /** total nav (Heading, Hamburger Menu, Truman Logo and Links */
+    padding-top: 5%;                /** to give a space on the top*/
+    justify-content: space-evenly;
+    height: 6%;
+    padding-right: 5%;
+    padding-left: 5%;
+    opacity: 0.8;
+}
+ 
+.nav-links{
+     z-index: 1;
+     opacity: 10;
+     position: fixed;
+     height: 150vh;                 /** Menu length when it opens on the page*/
+     top: 0vh;                      /** top 8vh  originally*/
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     padding-top: 0%;
+     width: 30%;
+     transform: translateX(335%);        /** not visible **/
+     transition: transform 1s ease-in; 
+}
+ 
+.nav-links li{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;   
+    font-size: larger;
+    padding-top: 3%;   
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+
+nav li:hover{
+     cursor: pointer;
+     background-color: grey;
+}
+ 
+.nav-links h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+     padding-top: 15%;
+     padding-left: 10%;
+}
+
+.nav-links img{
+    padding-left: 2%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-position: center;
+    width: 100%;
+}
+.nav-links a{
+      
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links h2{ 
+    color: white;
+    font-size: x-large;
+}
+.nav-active{
+     transform: translateX(240%);        /** click this burger than the nav should get back to 0 **/    
+}
+
+.toggle .line1{ 
+    background-color: rgb(216, 94, 94);
+    transform:  rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+ 
+.toggle .line3{ 
+    background-color: rgb(216, 94, 94);
+    transform:  rotate(45deg) translate(-5px, -6px);
+}
+
+.burger:hover{
+    opacity: 0.6;
+}
+
+/* FirstHeading Image and Para */
+
+.frontierimg{
+    position: relative;
+    display: flex;
+    z-index: -1;
+    top: -120px;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+  }
+  
+  .frontierText p{
+    position: relative;
+    display: flex;
+    z-index: -1;
+    top: -90px;
+    font-family: 'humanst521-bt';
+    letter-spacing: 1.5px;
+    line-height: 2.0em;
+    font-size: 18px;
+    word-wrap: break-word;
+    width: 90%;
+    left:5%
+  }
+  
+   /* Google Maps */
+
+   .locationHeader{
+    position: relative;
+    display: flex;
+    top: 100px;
+    font-family: 'humanst521-bt';
+    line-height: 1.88em;
+    font-size: 25px;
+    word-wrap: break-word;
+    object-fit: contain;
+    vertical-align: baseline;
+    left: 5%;
+  }
+
+  .LocationLine{
+    position: relative;
+    z-index: -1;
+    width: 90%;
+    top: 120px;
+    left: 5%;
+    right: 5%;
+  }
+
+
+  #googleMap{
+    z-index: 1;
+    top: 140px;
+    left: 5%;
+    right: 5%;
+    padding-bottom: 20%;
+  }
+
+  /* Blatchford Midheader, video and image */
+
+  .midHeader{
+    position: relative;
+    display: flex;
+    top: 300px;
+    font-family: 'humanst521-bt' !important;
+    letter-spacing: 10px;
+    line-height: 1.88em;
+    font-size: 36px;
+    word-wrap: break-word;
+    object-fit: contain;
+    vertical-align: baseline;
+    left: 12%;
+    padding-bottom: 200px;
+    z-index: -1;
+  }
+  
+
+  .responsive-iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .wrapper-video{
+    padding-top: 160px;;  
+    padding-left: 5%;
+    padding-right: 9%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+  }
+
+  .midHeaderimg{
+    z-index: -1;
+    position: relative;
+    display: flex;
+    top: 60px;
+    width: 80%;
+    height: 400px;
+    left: 8%;
+  }
+  .midHeaderimg img{
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    height: 340px;
+  }
+
+/* PROJECT HEADER AND IMAGE */
+  
+.ProjectHeader{
+    position: relative;
+    display: flex;
+    top: 120px;
+    font-family: Playfair Display;
+    line-height: 1.88em;
+    font-size: 25px;
+    word-wrap: break-word;
+    object-fit: contain;
+    vertical-align: baseline;
+    left: 5%;
+}
+
+.ProjectLine{
+    position: relative;
+    z-index: -1;
+    width: 90%;
+    top: 140px;
+    left: 5%;
+    right: 5%;
+  }
+
+  .projectOverview{
+    position: relative;
+    z-index: -1;
+    width: 90%;
+    top: 160px;
+    left: 5%;
+    right: 5%;
+  }
+
+
+
+
+/* Interior */
+
+.InteriorHeader{
+  position: relative;
+  display: flex;
+  top: 200px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.InteriorLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 220px;
+  left: 5%;
+  right: 5%;
+}
+
+/* INTERIOR */
+.ExteriorHeader{
+  position: relative;
+  display: flex;
+  top: 100px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.ExteriorLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 120px;
+  left: 5%;
+  right: 5%;
+}
+
+.InvestmentHeader{
+  position: relative;
+  display: flex;
+  top: 100px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.InvestmentLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 120px;
+  left: 5%;
+  right: 5%;
+}
+
+.ProjectRHeader{
+  position: relative;
+  display: flex;
+  top: 100px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.ProjectRLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 120px;
+  left: 5%;
+  right: 5%;
+  padding-bottom: 150px;;
+}
+
+.ResourcesLink{
+  
+  border: 5px solid whitesmoke;
+  box-shadow: 5px 10px #888888;
+  position: relative;
+  width: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  left: 5%;
+  line-height: 2.0em;
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+.ResourcesLink a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  position: relative;
+  text-decoration: none;
+  color: black;
+  line-height: 3.0em;
+  padding-top: 2%;   
+  padding-bottom: 2%;
+  width: 500px;
+  
+}
+
+.ResourcesLink :hover{
+  cursor: pointer;
+  color: rgb(117, 10, 10);
+  font-weight: bold;
+}
+
+
+.ResoucePicture{
+  position: relative;
+  display: flex;
+  right: 420px;
+  top: -320px;
+  width: 400px;
+  height: 400px;
+  float: right;
+  z-index: -1;
+}
+
+.colorish{
+  background-color: whitesmoke;
+  width: 100%;
+}
+.blankish{
+  background-color: white;
+  width: 100%;
+}
+
+
+/* Footer Setup */
+
+.footerImg{
+  position: relative;
+  display: flex;
+  z-index: -1;
+  top: -80px;
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+}
+
+.footerText p{
+  /* border: 5px solid whitesmoke; */
+  position: relative;
+  display: flex;
+  z-index: -1;
+  top: 0px;
+  font-family: 'humanst521-bt';
+  font-size: 14px;
+  word-wrap: break-word;
+  width: 90%;
+  left:5%
+}
+
+
+
+
+/* .AmenitiesHeader{
+  position: relative;
+  display: flex;
+  top: 400px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.AmenetiesLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 220px;
+  left: 5%;
+  right: 5%;
+} */
+
+
+
+/* For Cell Phones */
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    .logo{
+        padding-top: 1%;
+        left:5%;
+        position: fixed;       /** to keep it on the top*/
+        letter-spacing: 1px;
+        font-weight: 3;   
+        font-family: 'Alata', sans-serif;
+        color: black;
+        font-size: 5px;
+    }
+    
+    .burger div{                /** Line create for Hamburger Menu*/
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 2px;
+        transition: all 0.3s ease;
+    }
+    
+/* FirstHeading Image and Para */
+
+.frontierimg{
+    position: relative;
+    display: flex;
+    z-index: -1;
+    top: -60px;
+    width: -20px;
+    height: 80px;
+    justify-content: center;
+  }
+  
+  .frontierText p{
+    position: relative;
+    display: flex;
+    z-index: -1;
+    top: -30px;
+    font-family: 'humanst521-bt';
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-size: 18px;
+    word-wrap: break-word;
+    width: 100%;
+    left:5%
+  }
+
+
+    /* Blatchford Midheader, video and image */
+
+    .midHeader{
+      position: relative;
+      display: flex;
+      top: 200px;
+      font-family: 'humanst521-bt' !important;
+      letter-spacing: 1px;
+      line-height: 0.2em;
+      font-size: 10px;
+      word-wrap: break-word;
+      object-fit: contain;
+      vertical-align: baseline;
+      left: 5%;
+      padding-bottom: 200px;
+      z-index: -1;
+    }
+    
+  
+    .responsive-iframe {
+      width: 100%;
+      height: 400px;
+    }
+  
+    .wrapper-video{
+      padding-top: 50px;;  
+      padding-left: 5%;
+      padding-right: 9%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 50px;
+    }
+  
+    .midHeaderimg{
+      z-index: -1;
+      position: relative;
+      display: flex;
+      top: 60px;
+      width: 80%;
+      height: 400px;
+      left: 8%;
+    }
+    .midHeaderimg img{
+      position: absolute;
+      border: 1px solid black;
+      width: 100%;
+      height: 340px;
+    }
+
+    /* PROJECT HEADER AND IMAGE */
+  
+.ProjectHeader{
+  position: relative;
+  display: flex;
+  top: 120px;
+  font-family: Playfair Display;
+  line-height: 1.88em;
+  font-size: 25px;
+  word-wrap: break-word;
+  object-fit: contain;
+  vertical-align: baseline;
+  left: 5%;
+}
+
+.ProjectLine{
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  top: 140px;
+  left: 5%;
+  right: 5%;
+}
+
+.projectOverview .img{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  top: 160px;
+  left: -40%;
+  
+}
+
+.ResourcesLink{
+  
+  border: 5px solid whitesmoke;
+  box-shadow: 5px 10px #888888;
+  position: relative;
+  width: 80%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  left: 2%;
+
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.ResourcesLink a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  position: relative;
+  text-decoration: none;
+  color: black;
+  line-height: 3.0em;
+  padding-top: 2%;   
+  padding-bottom: 2%;
+  width: 500px;
+  
+}
+
+.ResoucePicture{
+  position: relative;
+  display: flex;
+  left: -100%;
+  top: 20px;
+  width: 50px;
+  height: 300px;
+  float: right;
+  z-index: -1;
+}
+
+
+
+}
+
+/* For Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .logo{
+        padding-top: 1%;
+        left:5%;
+        position: fixed;       /** to keep it on the top*/
+        letter-spacing: 1px;
+        font-weight: 3;   
+        font-family: 'Alata', sans-serif;
+        color: black;
+        font-size: 10px;
+    }
+    
+    .burger div{                /** Line create for Hamburger Menu*/
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        margin: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .ResourcesLink{
+  
+      border: 5px solid whitesmoke;
+      box-shadow: 5px 10px #888888;
+      position: relative;
+      width: 80%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      left: 2%;
+    
+      font-size: 15px;
+      word-wrap: break-word;
+    }
+    
+    .ResourcesLink a{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      position: relative;
+      text-decoration: none;
+      color: black;
+      line-height: 3.0em;
+      padding-top: 2%;   
+      padding-bottom: 2%;
+      width: 500px;
+      
+    }
+    
+    .ResoucePicture{
+      position: relative;
+      display: flex;
+      left: -80%;
+      top: 20px;
+      width: 50px;
+      height: 300px;
+      padding-bottom: 120px;;
+      z-index: -1;
+    }
+
+}
+

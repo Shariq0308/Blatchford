@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Investor Portal | BlatchFord</title>
+
+    <!-- For CSS  -->
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/firstSlider.css">
+    <link rel="stylesheet" href="/css/firstGallery.css">
+    <link rel="stylesheet" href="/css/secondSlider.css">
+    <link rel="stylesheet" href="/css/secondGallery.css">
+    <link rel="stylesheet" href="/css/thirdGallery.css">
+    <link rel="stylesheet" href="/css/investmentLogo.css">
+
+    <!-- For JS and JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/firstSlider.js"></script> 
+    <script src="js/secondSlider.js"></script>
+    
+</head>
+
+<!-- HEADER PRECONSTRUCTION LOGO AND MENU  -->
+<header>
+    <nav>
+        <div class="headerContainer">
+            <div class="logo">
+                <h2>PRE-CONSTRUCTION <span style="color: rgb(117, 10, 10);font-weight: bold;">VIP LAUNCH</span> PHASE 1</h2>
+            </div>
+             
+            <ul class="nav-links">
+                <img src="/Pictures/CrimsonLogo.jpg" alt="Crimson">
+                
+                <li><a href="#">&#129377; - BlatchFord Living</a></li>
+                <li><a href="#">&#128249; - Inner City Video</a></li>
+                <li> <a href="#">&#128506; - Location</a> </li>
+                <li><a href="#">&#128736; - Project Overview</a></li>
+                <li><a href="#">&#128655; - Amenities</a></li>
+                <li> <a href="#">&#128247; - Gallery</a> </li>
+                <h2><span style="color: rgb(117, 10, 10); font-weight: bold;font-size: larger;">Crimson</span> Cove Homes. Blatchford.</h2>  
+            </ul>  
+        
+
+            <div  class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div> 
+        </div> 
+    </nav>
+
+    <script src="/js/header.js"></script> 
+    
+</header>
+
+
+<body>
+    
+    <!-- SLIDE SHOW AND BUTTON LEFT/RIGHT -->
+    <div class="wrapper-1">
+        <div id="slider">
+            <img id="1" src="/Pictures/slide-1.jpg">
+            <img id="2" src="/Pictures/slide-2.jpg">
+            <img id="3" src="/Pictures/slide-3.jpg">
+            <img id="4" src="/Pictures/slide-4.jpg">
+        </div>
+    
+        <a href="#" class="left-1" onClick="prev()">&#10094;</a>
+        <a href="#" class="right-1" onClick="next()">&#10095;</a>
+    </div>   
+ 
+
+    <!-- FIRST HEADING AND PARA AND IMAGE GALLARY -->
+
+    <div class="frontierimg">
+        <img src="/Pictures/BlatchfordImage.jpg" >
+    </div>
+
+    <div class="frontierText">
+        <p>
+            Welcome to the truly unique and unparalleled experience that is Blatchford, in the heart of  
+            Edmonton. Opportunities to live in a first of its kind community planned and developed around
+            sustainability don’t come around often, and even less so when the community is walking 
+            distance to every amenity Inner City Edmonton has available. LRT just down the street, Rogers 
+            place arena a short walk away and countless entertainment, restaurant, and nightlife options 
+            just steps from your door. Flanked by 2 major Edmonton post secondary schools, Blatchford is a
+            once in a lifetime location opportunity for families, students, and professionals- you need to be a
+            part of it!
+        </p>
+    </div>
+
+    <section id="fontier-gallery" class="wrapper-gallery">
+
+        <div class="fontier-img img1">
+            <div><a href="#">Frontier</a></div>
+        </div>
+        <div class="fontier-img img2">
+            <div><a href="#">Frontier</a></div>
+        </div>
+        <div class="fontier-img img3">
+            <div><a href="#">Frontier</a></div>
+        </div>
+        <div class="fontier-img img4">
+            <div><a href="#">Frontier</a></div>
+        </div>
+
+    </section>
+    
+    <script src="/js/firstGallery.js"></script>  
+
+    <!-- GOOGLE Maps -->
+
+    
+    <div class="locationHeader">
+        <h2>Location</h2>   
+    </div>
+    <div  class="LocationLine"><hr></div> 
+
+    <div id="googleMap" style="width:90%;height:300px;"></div>
+    <script>
+        function myMap() 
+        {
+            var mapProp= {center:new google.maps.LatLng(53.573560,-113.521267),zoom:14,};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg9vOQGNWNNtX22uYWMtN2OQBK-NH3nhU&callback=myMap"></script>
+
+
+
+
+    <!-- Blatchford Sustainable COmmunity Video's & Banner  -->
+
+    
+    <div class="midHeader" class="wrapper-video">
+        <p>BLATCHFORD - BUILDING A SUSTAINABLE COMMUNITY</p>   
+    </div>
+  
+    <section id="Video-gallery" class="wrapper-video">
+
+        <iframe class="responsive-iframe" width='100%' height="600px"
+        src="https://www.youtube.com/embed/aIUYv5vS9Aw?" 
+        ></iframe>
+        <!-- <iframe class="responsive-iframe" width='100%' height="600px"
+        src="https://www.youtube.com/embed/aIUYv5vS9Aw?" 
+        allow="autoplay"></iframe> -->
+       
+        <iframe class="responsive-iframe" width='100%' height="600px"
+        src="https://www.youtube.com/embed/EF94nrEiiGE?" 
+        ></iframe>
+
+    </section>
+
+    <div Class="midHeaderimg">
+        <img src="/Pictures/BlatchfordIcons.jpg" >
+    </div>
+
+
+    <!-- PROJECT OVERVIEW -->
+
+    <div class="ProjectHeader">
+        <h2>Project Overview</h2>   
+    </div>
+    <div  class="ProjectLine"> <hr></div> 
+
+    <div Class="projectOverview">
+        <img src="/Pictures/ProjectOverview.jpg" >
+    </div>
+
+
+
+
+    <!-- INTERIOR -->
+    
+    <div class="InteriorHeader">
+        <h2>Interior</h2>   
+    </div>
+    <div  class="InteriorLine"> <hr></div> 
+
+    <section id="index-gallery" class="wrapper-gallery">
+
+        <div class="gallery-img img1">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img2">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img3">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img4">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img5">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img6">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img7">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img8">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img9">
+            <div><a href="#">Interior</a></div>
+        </div>
+        <div class="gallery-img img10">
+            <div><a href="#">Interior</a></div>
+
+    </section>
+
+    <script src="/js/secondGallery.js"></script>  
+
+    <!-- INTERIOR -->
+    
+    <div class="ExteriorHeader">
+        <h2>Exterior</h2>   
+    </div>
+    <div  class="ExteriorLine"> <hr></div> 
+     
+    <section id="third-gallery" class="wrapper-gallery-1">
+
+        <div class="exterior-img img1">
+            <div><a href="#">Exterior</a></div>
+        </div>
+        <div class="exterior-img img2">
+            <div><a href="#">Exterior</a></div>
+        </div>
+        <div class="exterior-img img3">
+            <div><a href="#">Exterior</a></div>
+        </div>
+
+    </section>
+
+    <script src="/js/thirdGallery.js"></script>  
+
+
+    <!-- Aemnities -->
+
+    <!-- <div  class="ExteriorLine"> <hr></div> 
+    <div class="AmenitiesHeader">
+        <h2>In The Neighbourhood</h2>   
+    </div>
+    <div  class="AmenetiesLine"> <hr></div> 
+ -->
+        <!-- <div id="slider-2">
+            <img id="5" src="/Pictures/Mid1.jpg">
+            <img id="6" src="/Pictures/Mid2.jpg">
+            <img id="7" src="/Pictures/Mid3.jpg">
+            <img id="8" src="/Pictures/Mid4.jpg">
+        </div>
+
+        <a href="#!" class="left2" onClick="prev2()">&#10094;</a>
+        <a href="#!" class="right2" onClick="next2()">&#10095;</a>
+
+  -->
+
+  <!-- INVESTMENT AT A GLANCE -->
+
+    <div class="InvestmentHeader">
+        <h2>Investment at a Glance</h2>   
+    </div>
+    <div  class="InvestmentLine"> <hr></div>  
+
+    <section id="Investment-gallery" class="wrapper-gallery-2">
+
+        <div class="investment-img img1">
+            <div><a href="#"></a></div>
+        </div>
+        <div class="investment-img img2">
+            <div><a href="#"></a></div>
+        </div>
+        <div class="investment-img img3">
+            <div><a href="#"></a></div>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT RESOURCES -->
+
+    <div class="ProjectRHeader">
+        <h2>Project Resources</h2>   
+    </div>
+    <div  class="ProjectRLine"> <hr></div> 
+
+    <div class="ResourcesLink">
+
+        <div class="colorish"><a href="https://drive.google.com/file/d/15uKRjhCfKsJ8zBahr9ExJXF_6fC7tmkz/view" target="_blank">&#128196; - Project Presentation</a></div>
+        <div class="blankish"><a href="https://drive.google.com/file/d/12GR3c9MIfFz4VonoVkt9GpFPDGX9zFQu/view" target="_blank">&#128196; - Specification</a></div>
+        <div class="colorish"><a href="https://drive.google.com/file/d/1L2DEswZ-Vto94-ZoiCLPAe6xZPWfW3Ph/view" target="_blank">&#128196; - Investor Analysis</a></div>
+
+        <div class="blankish"></div><a href="https://drive.google.com/file/d/1UgCf6lK2yz_yWxNzfvDOR8rfqa5XHqUa/view" target="_blank">&#128196; - Floor Plans</a></div>
+
+    </div>
+
+    <div class="ResoucePicture">
+        <img id="ResourcePic" src="/Pictures/exterior1.jpg">
+    </div>
+
+</body>
+
+		<!-- Footer setup -->
+		<footer>
+            <div class="footerImg">
+                <img src="/Pictures/FooterLogo.jpg" >
+            </div>
+        
+            <div class="footerText">
+                <p>
+                    ALL IMAGES DEPICTED ARE ARTISTIC RENDITIONS AND SUBJECT TO CHANGE. THE DEVELOPER AND BUILDER RESERVE THE RIGHT TO MAKE MODIFICATIONS AND CHANGES TO THE BUILDING, ANY UNIT, PARKING AREA AND STORAGE AREA DESIGN, SPECIFICATIONS,
+                    FEATURES AND FLOOR PLANS IN ORDER TO MAINTAIN THE HIGH STANDARDS OF THIS DEVELOPMENT OR TO COMPLY WITH MUNICIPAL REQUIREMENTS. THE SQUARE FOOTAGE AND ROOM DIMENSIONS ARE BASED ON ARCHITECTURAL DRAWINGS AND MEASUREMENTS. THE 
+                    LOCATION OF UTILITIES MAY NOT BE ACCURATELY DEPICTED HEREIN. 
+                    FURNITURE LAYOUTS DEPICT STANDARD FURNISHING SIZES AND ARE INTENDED FOR REFERENCE ONLY. ALL SIZES AND DIMENSIONS ARE APPROXIMATE AND ACTUAL AREA AND DIMENSIONS MAY VARY FROM THE PRELIMINARY PLANS TO THE FINAL SURVEY. E. & O. E.
+                </p>
+            </div>
+
+		</footer>
+
+
+
+</html>

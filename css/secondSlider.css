@@ -1,0 +1,87 @@
+/* Slider CSS */
+
+
+#slider-2{
+    left: 5%;
+    top: 250px;
+    z-index: -1;
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;       
+    
+}
+
+#slider-2>img{
+    z-index: -1;
+    top: 260px;
+    width: 800px;
+    height: 500px;   
+}
+
+
+
+.left2 {
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    top: -120px;
+    padding: 5px 10px;
+    background-color: black;
+    margin: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.5;   
+    left: 50px;;
+}
+
+.right2{
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    top: -120px;
+    padding: 5px 10px;
+    background-color: black;
+    margin: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.5;  
+}
+
+a.left2{
+    float: left;
+}
+
+a.right2{
+    left: 500px;
+    float: left;
+}
+
+.right2:hover, .left2:hover{
+    background-color: rgba(28, 27, 27, 0.6);  
+}
+
+
+ul{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.88em;
+    font-size: 20px;
+}
+
+#slider-ul{
+    top: 100px;
+    z-index: -1;
+    position: relative;   
+    float: right;  
+}
