@@ -83,7 +83,7 @@ function changeImageE(EEDirectory){
         }
     }
 
-    eImg.setAttribute("src", "/Blatchford/Pictures/Exterior" + calENewImage +".jpg");
+    eImg.setAttribute("src", "/Blatchford/Pictures/exterior" + calENewImage +".jpg");
     eImg.setAttribute("id", "currE-imge");
     
     elatestImg = calENewImage;
