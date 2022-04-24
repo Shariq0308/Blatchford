@@ -13,9 +13,9 @@ if(galleryImages){
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
             let getImgUrlPos = getFullImgUrl.split("/Blatchford/Pictures/");
-            alert(getFullImgUrl);
+//             alert(getFullImgUrl);
             let setNewImgUrl = getImgUrlPos[1].replace('")', '');
-            alert(setNewImgUrl);
+//             alert(setNewImgUrl);
 
             getlatestOpenedImg = index + 1;
 
