@@ -8,7 +8,7 @@ if(eImages){
             
             let getEcsse = window.getComputedStyle(imgge);
             let getEImgURL = getEcsse.getPropertyValue("background-image");
-            let getIurlPose = getEImgURL.split("/Pictures/");
+            let getIurlPose = getEImgURL.split("/Blatchford/Pictures/");
             let setEImgURL = getIurlPose[1].replace('")','');
             
 
@@ -22,7 +22,7 @@ if(eImages){
 
             let eImg = document.createElement("img");
             eImgWindow.appendChild(eImg);
-            eImg.setAttribute("src", "/Pictures/" + setEImgURL);
+            eImg.setAttribute("src", "/Blatchford/Pictures/" + setEImgURL);
             eImg.setAttribute("id", "currE-imge");
 
             eImg.onload = function() {
@@ -83,7 +83,7 @@ function changeImageE(EEDirectory){
         }
     }
 
-    eImg.setAttribute("src", "/Pictures/Exterior" + calENewImage +".jpg");
+    eImg.setAttribute("src", "/Blatchford/Pictures/Exterior" + calENewImage +".jpg");
     eImg.setAttribute("id", "currE-imge");
     
     elatestImg = calENewImage;
